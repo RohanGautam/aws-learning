@@ -4,9 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "npx pm2 start ./server.js --name hello-aws --log ../logs/app.log",
+    "stop": "npx pm2 stop hello-aws",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "pm2": "^4.5.4"
+  }
 }
